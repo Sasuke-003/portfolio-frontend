@@ -1,25 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CustomAnimatedCursor from "./components/customAnimatedCursor";
+import { useMousePosition } from "./hooks/mousePositionHook";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CustomAnimatedCursor />
+      <div
+        className="App"
+        style={{ backgroundColor: "#19311F", width: "10vw", height: "10vh" }}
+      ></div>
+    </>
   );
 }
 
